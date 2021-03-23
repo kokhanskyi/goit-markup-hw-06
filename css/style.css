@@ -215,7 +215,6 @@ body {
     url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
 }
 
 .hero-title {
@@ -438,7 +437,8 @@ body {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  position: relative;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   overflow: hidden;
 }
 .portfoleo-project-list-item:hover {
@@ -456,21 +456,26 @@ body {
   color: var(--portfoleo-project-list-text-color);
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-}
-.portfoleo-projekt-list-item-text-box {
   position: absolute;
-  top: 0;
-  transform: translateY(150%);
+  bottom: 0;
+  transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfoleo-project-list-item:hover .portfoleo-projekt-list-item-text-box {
+.portfoleo-projekt-list-item-text-box {
+  position: relative;
+  overflow: hidden;
+}
+.portfoleo-project-list-item:hover .portfoleo-project-list-text {
   transform: translateY(0);
 }
 
 .portfoleo-project-wapper {
   display: block;
   border: 1px solid #eeeeee;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  overflow: hidden;
   border-top: none;
   padding: 20px 24px;
 }
@@ -643,6 +648,9 @@ footer {
 }
 
 .modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;

@@ -380,9 +380,59 @@
             <use href="./images/icons.svg#icon-close-black-18dp" ></use>
           </svg>
         </button>
+
+       <form action="" class="modal-form">
+         <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <label for="modal-form-field">
+            Имя
+            <span class="modal-form-input-wrapper">
+              <input name="user-name" class="modal-form-input" type="text">
+              <svg class="modal-form-icon">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </span>           
+          </label>
+          <label for="modal-form-field">
+            Телефон
+            <span class="modal-form-input-wrapper">
+              <input name="user-phone" class="modal-form-input" type="tel">
+              <svg class="modal-form-icon">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>   
+            </span>       
+          </label>
+          <label for="modal-form-field">
+            Почта
+            <span class="modal-form-input-wrapper">
+            <input name="user-email" class="modal-form-input" type="email">
+              <svg class="modal-form-icon">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </span>
+          </label>
+          <label for="modal-form-field">
+            Комментарий
+            <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+          </label>
+
+          <input id="user-term" type="checkbox" name="user-term" class="modal-form-term visually-hidden">
+          <label class="modal-form-term-desc" for="user-term">Соглашаюсь с рассылкой и принимаю 
+            <a href="">Условия договора</a>
+          </label>
+          <button type="submit" class="modal-form-btn">Отправить</button>
+
+        </form>
+
+
       </div>
     </div>
     
+
+
+
+
+
+    <!-- SKRIPT -->
   <script src="./js/modal.js"></script>
 </body>
 </html>
